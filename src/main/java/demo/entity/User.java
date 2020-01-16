@@ -8,33 +8,81 @@ package demo.entity;
 
 public class User {
 
-    private String id;
+    /**
+     * 用户id
+     */
+    private String userId;
 
-    private String name;
+    /**
+     * 用户名称
+     */
+    private String userName;
 
-    private Integer age;
+    /**
+     * 用户年龄
+     */
+    private Integer userAge;
 
-    public String getId() {
-        return id;
+    /**
+     * 用户型性别
+     */
+    private String userSex;
+
+    /**
+     * 创建时间
+     */
+    private String createTime;
+
+    /**
+     * 修改时间
+     */
+    private String updateTime;
+
+    public String getUserId() {
+        return userId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public Integer getAge() {
-        return age;
+    public Integer getUserAge() {
+        return userAge;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setUserAge(Integer userAge) {
+        this.userAge = userAge;
+    }
+
+    public String getUserSex() {
+        return userSex;
+    }
+
+    public void setUserSex(String userSex) {
+        this.userSex = userSex;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(String updateTime) {
+        this.updateTime = updateTime;
     }
 }

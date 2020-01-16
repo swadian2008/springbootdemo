@@ -20,11 +20,24 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
+
     @Override
-    public List<User> selectUserByName(User user) {
-        PageHelper.startPage(1,2);
-        List<User> users = userMapper.selectUserByName(user);
-        return users;
+    public List<User> selectUserInfo(User user) {
+        return userMapper.selectUserInfo(user);
     }
 
+    @Override
+    public int insertUserInfo(User user) {
+        return userMapper.insertUserInfo(user);
+    }
+
+    @Override
+    public int updateUserInfo(User user) {
+        return userMapper.updateUserInfo(user);
+    }
+
+    @Override
+    public int deleteUserInfoById(String userId) {
+        return userMapper.deleteUserInfoById(userId);
+    }
 }

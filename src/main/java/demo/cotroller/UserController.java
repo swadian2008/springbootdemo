@@ -9,12 +9,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+import java.util.UUID;
+
 /**
  * @author Administrator
  * @date 2019/7/6/006 20:25
  * @Version 1.0
  */
 @RestController
+@RequestMapping("/user")
 public class UserController {
 
     /**
@@ -26,18 +30,49 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("demo/User/selectUser")
-    public Object selectUser(){
-        User user = new User();
-        user.setName("xiaohong");
-        LogUtils.info("打印入参：{}",user);
-        LogUtils.info("打印入参：this is the second");
-        LogUtils.info("打印入参：this is the third");
-        return userService.selectUserByName(user);
+    /**
+     * 查询
+     * @param user
+     * @return
+     */
+    @RequestMapping("/selectUserInfo")
+    public Object selectUserInfo(User user){
+        return userService.selectUserInfo(user);
     }
 
-    @RequestMapping("demo/User/getUser")
-    public Object getUser(@RequestBody User user){
-        return userService.selectUserByName(user);
+    /**
+     * 增加
+     * @param user
+     * @return
+     */
+    @RequestMapping("/insertUserInfo")
+    public Object insertUserInfo(User user){
+        return userService.insertUserInfo(user);
+    }
+
+    /**
+     * 修改
+     * @param user
+     * @return
+     */
+    @RequestMapping("/updateUserInfo")
+    public Object updateUserInfo(User user){
+        return userService.updateUserInfo(user);
+    }
+
+    /**
+     * 删除
+     * @param userId
+     * @return
+     */
+    @RequestMapping("/deleteUserInfoById")
+    public Object deleteUserInfoById(String userId){
+        return userService.deleteUserInfoById(userId);
+    }
+
+    public static void main(String[] args) {
+        String str = UUID.randomUUID().toString();
+        String replace = str.replace("-", "");
+        System.out.println(replace);
     }
 }

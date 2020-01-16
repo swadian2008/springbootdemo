@@ -6,6 +6,32 @@ import java.util.List;
 
 public interface UserService {
 
-    List<User> selectUserByName(User user);
+    /**
+     * 查询
+     * @param user
+     * @return
+     */
+    List<User> selectUserInfo(User user);
+
+    /**
+     * 增加
+     * @param user
+     * @return
+     */
+    int insertUserInfo(User user);
+
+    /**
+     * 修改
+     * @param user
+     * @return
+     */
+    int updateUserInfo(User user);
+
+    /**
+     * 删除
+     * @param userId
+     * @return
+     */
+    int deleteUserInfoById(String userId);
 
 }
