@@ -70,9 +70,4 @@ public class UserController {
         return userService.deleteUserInfoById(userId);
     }
 
-    public static void main(String[] args) {
-        String str = UUID.randomUUID().toString();
-        String replace = str.replace("-", "");
-        System.out.println(replace);
-    }
 }
