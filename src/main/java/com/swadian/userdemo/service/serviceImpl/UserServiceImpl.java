@@ -1,9 +1,8 @@
-package demo.service.serviceImpl;
+package com.swadian.userdemo.service.serviceImpl;
 
-import com.github.pagehelper.PageHelper;
-import demo.entity.User;
-import demo.mapper.UserMapper;
-import demo.service.UserService;
+import com.swadian.userdemo.entity.User;
+import com.swadian.userdemo.mapper.UserMapper;
+import com.swadian.userdemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

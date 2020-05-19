@@ -1,6 +1,6 @@
-package demo.mapper;
+package com.swadian.userdemo.mapper;
 
-import demo.entity.User;
+import com.swadian.userdemo.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

@@ -1,6 +1,6 @@
-package demo.service;
+package com.swadian.userdemo.service;
 
-import demo.entity.User;
+import com.swadian.userdemo.entity.User;
 
 import java.util.List;
 

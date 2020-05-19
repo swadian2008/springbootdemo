@@ -1,4 +1,4 @@
-package demo.utils;
+package com.swadian.userdemo.utils;
 
 import com.alibaba.fastjson.JSON;
 import org.slf4j.Logger;

@@ -1,16 +1,10 @@
-package demo.cotroller;
+package com.swadian.userdemo.cotroller;
 
-import demo.entity.User;
-import demo.service.UserService;
-import demo.utils.LogUtils;
+import com.swadian.userdemo.entity.User;
+import com.swadian.userdemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
-import java.util.UUID;
 
 /**
  * @author Administrator

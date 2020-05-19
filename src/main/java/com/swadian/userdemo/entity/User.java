@@ -1,4 +1,4 @@
-package demo.entity;
+package com.swadian.userdemo.entity;
 
 /**
  * @author Administrator
